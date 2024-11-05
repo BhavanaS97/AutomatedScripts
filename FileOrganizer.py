@@ -3,7 +3,7 @@ import shutil
 import stat
 
 # Define source path
-src_dir = "/Users/vinaykumarvommi/Desktop/Automation" #Path
+src_dir = os.getenv("AUTOMATION_PATH", "./default-path") #Path
 file_categories = {
     "Images": ['jpg', 'jpeg', 'png', 'gif'],
     "Documents": ['pdf', 'docx', 'txt'],
